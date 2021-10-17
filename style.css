@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: BogleWeb, Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav.flex {
+  width: 1280px;
+  height: 88px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0071dc;
+  position: relative;
+}
+div.flex-items a {
+  text-decoration: none;
+  color: #ffffff;
+  font: 16px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+a.flex {
+  display: flex;
+  align-items: center;
+}
+
+div.departlist ul {
+  box-sizing: border-box;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  list-style: none;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 250px;
+  max-height: 700px;
+  overflow-y: auto;
+  visibility: hidden;
+  transition: all 0.1s ease 0s;
+  margin-top: 35px;
+}
+
+div.departlist ul li {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+div.depart:hover > div.departlist ul {
+  display: block;
+  visibility: visible;
+  z-index: 1;
+}
+
+div.servicelist ul {
+  box-sizing: border-box;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  list-style: none;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 250px;
+  max-height: 700px;
+  overflow-y: auto;
+  visibility: hidden;
+  transition: all 0.1s ease 0s;
+  margin-top: 35px;
+}
+
+div.servicelist ul li {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+div.service:hover > div.servicelist ul {
+  display: block;
+  visibility: visible;
+  z-index: 1;
+}
+
+div.search {
+  width: 30%;
+  height: 40px;
+  background-color: transparent;
+  position: relative;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px;
+  border-radius: 20px;
+  background-color: white;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-radius: 0px;
+}
+
+.sec {
+  box-shadow: 0 1px 2px 1px rgb(0 0 0 / 15%);
+}
+
+.c2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c2c1 {
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+}
+
+section div {
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+}
+
+.c7 {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div.d2 a {
+  text-decoration: none;
+}
+footer div.d2 a h4 {
+  color: white;
+}
